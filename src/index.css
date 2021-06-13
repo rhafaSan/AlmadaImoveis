@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-title{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #ffff;
+    text-align: center;
+    height: 70px;
+}
+
+.page-title h1{
+    padding: 1%;
+}
+
+#form h4{
+    font-size: 23px;
+    text-align: center;
+}
+
+.insert-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.insert-form input{
+    margin-bottom: 1%;
+    height: 25px;
+    /* border-radius: 8px; */
+    border: 1px solid #777;
+    transition: border 02.s;
+    padding-left: 5px;
+}
+
+.insert-form input[type=text]:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e40f0f;
+}
+
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid #000; */
+    justify-content: space-between;
+
+}
+
+.btn-container button{
+    height: 2.4rem;
+    width: 30%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-container #clear:hover{
+    background-color: #ee5252;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.btn-container #insert:hover{
+    background-color: #30e44e;
+    color: #000;
+    cursor: pointer;
+
+}
+
+.btn-container #clear{
+    background-color: #e40f0f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-container #insert{
+    background-color: #01a51c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
