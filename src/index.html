@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Projeto Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="page-title">
-            <h1>Almada Imóveis</h1>
-        </div>
+      <div class="page-title">
+        <h1>Almada Imóveis</h1>
+      </div>
     </header>
-    <hr>
+    <hr />
     <main>
-        <div id="form">
-            <form class="insert-form">
-                <h4>Inserir anúncio</h4>
-                <label for="title">Título:</label>
-                <input type="text" name="title">
-                <label for="description">Descrição:</label>
-                <input type="text" name="description">
-                <label for="rooms">Quartos:</label>
-                <input type="text" name="rooms">
-                <label for="vacancies">Vagas de garagem:</label>
-                <input type="text" name="vacancies">
-                <label for="area">Área de terreno:</label>
-                <input type="text" name="area">
-                <label for="work-area">Área construída:</label>
-                <input type="text" name="work-area">
-                <label for="location">Localidade:</label>
-                <input type="text" name="location">
-                <label for="price">Preço:</label>
-                <input type="text" name="price">
-                <label for="image">Imagem:</label>
-                <input type="text" name="image">
+      <div id="form">
+        <form id="formulario" class="insert-form">
+          <h4>Inserir anúncio</h4>
+          <label for="title">Título:</label>
+          <input type="text" id="title" name="title" />
+          <label for="description">Descrição:</label>
+          <input type="text" id="description" name="description" />
+          <label for="rooms">Quartos:</label>
+          <input type="text" id="rooms" name="rooms" />
+          <label for="vacancies">Vagas de garagem:</label>
+          <input type="text" id="vacancies" name="vacancies" />
+          <label for="area">Área de terreno:</label>
+          <input type="text" id="area" name="area" />
+          <label for="work-area">Área construída:</label>
+          <input type="text" id="work-area" name="work-area" />
+          <label for="location">Localidade:</label>
+          <input type="text" id="location" name="location" />
+          <label for="price">Preço:</label>
+          <input type="text" id="price" name="price" />
+          <label for="image">Imagem:</label>
+          <input type="text" id="image" name="image" />
 
-                <div class="btn-container">
-                    <button id="clear">Limpar</button>
-                    <button id="insert" type="submit">Inserir</button>
-                </div>
-            </form>
-        </div>
+          <div class="btn-container">
+            <button id="clear">Limpar</button>
+            <button id="insert" type="submit" onclick="handleCreate()">
+              Inserir
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+
+    <div id="listagem"></div>
+    <script src="index.js"></script>
+  </body>
 </html>
