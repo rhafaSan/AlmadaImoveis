@@ -123,13 +123,21 @@ item.forEach(element => {
     liImage.appendChild(createImg(element.image));   
 
     ul.appendChild(liTitle);
+    ul.appendChild(labelDescription);
     ul.appendChild(liDescription);
+    ul.appendChild(labelRooms);
     ul.appendChild(liRooms);
+    ul.appendChild(labelVacancies);
     ul.appendChild(liVacancies);
-    ul.appendChild(liArea); 
+    ul.appendChild(labelArea);
+    ul.appendChild(liArea);
+    ul.appendChild(labelWorkArea);
     ul.appendChild(liWorkArea);
+    ul.appendChild(labelLocation);
     ul.appendChild(liLocation);
+    ul.appendChild(labelPrice);
     ul.appendChild(liPrice);
+    ul.appendChild(labelImage);
     ul.appendChild(liImage);
 });
     
