@@ -80,6 +80,38 @@ item.forEach(element => {
     var liPrice = document.createElement('li');
     var liImage = document.createElement('li');
 
+    var labelDescription = document.createElement('label');
+    labelDescription.innerHTML = "Descrição: ";
+    labelDescription.classList.add('labelDescriptionComponent');
+
+    var labelRooms = document.createElement('label');
+    labelRooms.innerHTML = "Quartos: ";
+    labelRooms.classList.add('labelRoomsComponent');
+
+    var labelVacancies = document.createElement('label');
+    labelVacancies.innerHTML = "Vagas de garagem: ";
+    labelVacancies.classList.add('labelVacanciesComponent');
+
+    var labelArea = document.createElement('label');
+    labelArea.innerHTML = "Área de terreno: ";
+    labelArea.classList.add('labelAreaComponent');
+
+    var labelWorkArea = document.createElement('label');
+    labelWorkArea.innerHTML = "Área construída: ";
+    labelWorkArea.classList.add('labelWorkAreaComponent');
+
+    var labelLocation = document.createElement('label');
+    labelLocation.innerHTML = "Localidade: ";
+    labelLocation.classList.add('labelLocationComponent');
+
+    var labelPrice = document.createElement('label');
+    labelPrice.innerHTML = "Preço: ";
+    labelPrice.classList.add('labelPriceComponent');
+
+    var labelImage = document.createElement('label');
+    labelImage.innerHTML = "Foto da casa: ";
+    labelImage.classList.add('labelImageComponent');
+
     liTitle.appendChild(createH1(element.title));
     liDescription.appendChild(createSpan(element.description));
     liRooms.appendChild(createSpan(element.rooms));
@@ -91,13 +123,21 @@ item.forEach(element => {
     liImage.appendChild(createImg(element.image));   
 
     ul.appendChild(liTitle);
+    ul.appendChild(labelDescription);
     ul.appendChild(liDescription);
+    ul.appendChild(labelRooms);
     ul.appendChild(liRooms);
+    ul.appendChild(labelVacancies);
     ul.appendChild(liVacancies);
+    ul.appendChild(labelArea);
     ul.appendChild(liArea);
+    ul.appendChild(labelWorkArea);
     ul.appendChild(liWorkArea);
+    ul.appendChild(labelLocation);
     ul.appendChild(liLocation);
+    ul.appendChild(labelPrice);
     ul.appendChild(liPrice);
+    ul.appendChild(labelImage);
     ul.appendChild(liImage);
 });
     
