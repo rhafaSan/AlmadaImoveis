@@ -94,7 +94,7 @@ item.forEach(element => {
     ul.appendChild(liDescription);
     ul.appendChild(liRooms);
     ul.appendChild(liVacancies);
-    ul.appendChild(liArea);
+    ul.appendChild(liArea); 
     ul.appendChild(liWorkArea);
     ul.appendChild(liLocation);
     ul.appendChild(liPrice);
