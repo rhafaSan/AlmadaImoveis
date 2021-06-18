@@ -15,6 +15,18 @@ var anuncio = {
 
 }
 
+function limpar(){
+    document.getElementById('title').value = "";
+    document.getElementById('description').value = "";
+    document.getElementById('rooms').value = "";
+    document.getElementById('vacancies').value = "";
+    document.getElementById('area').value = "";
+    document.getElementById('work-area').value = "";
+    document.getElementById('location').value = "";
+    document.getElementById('price').value = "";
+    document.getElementById('image').value = "";
+}
+
 var anuncios = [];
 
 function start(){
@@ -111,6 +123,8 @@ item.forEach(element => {
     var labelImage = document.createElement('label');
     labelImage.innerHTML = "Foto da casa: ";
     labelImage.classList.add('labelImageComponent');
+
+
 
     liTitle.appendChild(createH1(element.title));
     liDescription.appendChild(createSpan(element.description));
